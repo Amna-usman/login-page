@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Login page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
     <div class="container">
-        <div class="inner-container">
-            <div class="left-section">
-                <h2>Contact Now</h2>
-                <form class="contact-form">
-                    <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
-                    <select>
-                        <option value="">Department</option>
-                        <option value="sales">Sales</option>
-                        <option value="support">Support</option>
-                        <option value="hr">HR</option>
-                    </select>
-                    <textarea placeholder="Message" rows="4"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+        <div class="left-container">
+            <h2>Contact Now</h2>
+            <div class="labels">
+                <input class="placeholder" type="text" placeholder="Username">
+                <input class="placeholder" type="password" placeholder="Passward">
+                <input class="placeholder" type="email" placeholder="Email">
+                <input class="placeholder" type="text" placeholder="Message">
             </div>
+            <button>Send Message</button>
+        </div>
+        <div class="right-container">
+            <div class="icons">
+                <button style="background-color: blue;" class="icon-design"><i class="fab fa-facebook-f"></i></button>
+                <button style="background-color: rgb(58, 221, 213);" class="icon-design"><i
+                        class="fab fa-twitter"></i></button>
+                <button style="background-color: rgb(192, 63, 231);" class="icon-design"><i
+                        class="fab fa-instagram"></i></button>
+                <button style="background-color: rgb(58, 58, 63);" class="icon-design"><i
+                        class="fab fa-yahoo"></i></button>
+            </div>
+            <div class="secs">
+                <button class="styled-btn"><i class="fas fa-envelope"></i></button>
+                <button class="styled-btn"><i class="fa-solid fa-user"></i></button>
+
+
+                <select id="department">
+                    <option value="" disabled selected>Select a department</option>
+                    <option>Chemistry</option>
+                    <option>Biology</option>
+                    <option>Physics</option>
+                </select>
+                <input id="area" type="textarea">
+            </div>
+
         </div>
     </div>
 </body>
+
 </html>
